@@ -16,14 +16,14 @@
         font-weight: 700;
         font-size: 64px;
         letter-spacing: -1.5px;
-        fill: #e8eaf6;
+        fill: #f7f8ff;
       }
       .dw-tag {
         font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-weight: 500;
         font-size: 22px;
         letter-spacing: 0.4px;
-        fill: #a9b1d6;
+        fill: #c0caf5;
       }
     </style>
   </defs>

@@ -56,8 +56,9 @@ nav a:hover, .header-link:hover { color: var(--cyan); }
 .hero { min-height: 690px; padding-block: clamp(80px, 10vw, 136px); display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(400px, .92fr); gap: clamp(48px, 8vw, 100px); align-items: center; }
 .kicker { margin: 0 0 20px; color: var(--cyan); font: 700 11px/1.4 "SFMono-Regular", Menlo, Monaco, "Liberation Mono", monospace; letter-spacing: .11em; text-transform: uppercase; }
 .kicker span { display: inline-block; width: 28px; height: 2px; margin: 0 10px 3px 0; background: var(--cyan); }
-.hero h1 { margin: 0; max-width: 760px; color: var(--bright); font-size: clamp(58px, 7.2vw, 92px); font-weight: 300; line-height: .94; letter-spacing: -.065em; }
-.hero h1 em { color: var(--blue); font-style: normal; font-weight: 650; }
+.hero h1 { margin: 0; max-width: 760px; color: var(--bright); font-size: clamp(50px, 5.2vw, 72px); font-weight: 620; line-height: 1.02; letter-spacing: -.04em; }
+.hero h1 > span { display: block; }
+.hero h1 em { color: var(--blue); font-style: normal; font-weight: 760; }
 .hero-lead { max-width: 660px; margin: 34px 0 0; color: var(--muted); font-size: clamp(17px, 1.8vw, 21px); line-height: 1.55; letter-spacing: -.015em; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 38px; }
 .button { min-height: 50px; padding: 0 22px; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; transition: background .18s ease, color .18s ease; }
@@ -87,10 +88,10 @@ nav a:hover, .header-link:hover { color: var(--cyan); }
 @media (prefers-reduced-motion: reduce) { .cursor { animation: none; } }
 
 .signal-strip { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); border-bottom: 0; }
-.signal-strip li { min-height: 125px; padding: 24px; display: grid; align-content: center; gap: 8px; border-right: 1px solid var(--line); background: var(--panel); }
+.signal-strip li { min-height: 145px; padding: 24px; display: grid; align-content: center; gap: 10px; border-right: 1px solid var(--line); background: var(--panel); }
 .signal-strip li:last-child { border-right: 0; }
-.signal-strip strong { color: var(--bright); font: 500 32px/1 "SFMono-Regular", Menlo, Monaco, "Liberation Mono", monospace; }
-.signal-strip span { color: var(--muted); font-size: 12px; line-height: 1.4; }
+.signal-strip strong { color: var(--bright); font: 650 28px/1 "SFMono-Regular", Menlo, Monaco, "Liberation Mono", monospace; letter-spacing: -.04em; }
+.signal-strip span { max-width: 220px; color: var(--muted); font-size: 13px; line-height: 1.45; }
 
 .systems { padding-block: 110px; background: var(--bg-deep); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .section-head { margin-bottom: 48px; display: grid; grid-template-columns: 1.1fr .9fr; gap: 60px; align-items: end; }
@@ -148,6 +149,10 @@ nav a:hover, .header-link:hover { color: var(--cyan); }
 .contact-tile:hover { outline: 2px solid var(--cyan); outline-offset: -2px; }
 .site-footer { min-height: 82px; display: flex; justify-content: space-between; gap: 22px; align-items: center; color: var(--muted); font-size: 11px; }
 
+@media (min-width: 1100px) {
+  .hero h1 > span { white-space: nowrap; }
+}
+
 @media (max-width: 920px) {
   .site-header { grid-template-columns: auto 1fr auto; }
   .brand-copy { display: none; }
@@ -178,6 +183,7 @@ nav a:hover, .header-link:hover { color: var(--cyan); }
   .terminal-body { padding: 20px 17px; font-size: 11px; overflow-x: auto; }
   .signal-strip { width: 100%; grid-template-columns: 1fr; border-inline: 0; }
   .signal-strip li, .signal-strip li:nth-child(2) { min-height: 105px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .signal-strip span { max-width: none; }
   .systems, .engineering, .contact { padding-block: 78px; }
   .system-tile { min-height: 470px; padding: 22px; }
   .system-logo { min-height: 180px; margin: 22px -22px 24px; padding: 18px 22px; }
