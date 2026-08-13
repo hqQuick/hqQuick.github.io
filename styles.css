@@ -105,14 +105,14 @@ nav a:hover, .header-link:hover { color: var(--cyan); }
 .tile-label { display: flex; justify-content: space-between; color: rgba(232,234,246,.72); font: 10px "SFMono-Regular", Menlo, Monaco, "Liberation Mono", monospace; letter-spacing: .1em; text-transform: uppercase; }
 .tile-label b { font-weight: 500; }
 .system-logo { min-height: 215px; margin: 24px -25px 28px; padding: 22px 25px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-.system-logo--light { background: #f4f5f8; }
-.system-logo--dark { background: #10131c; }
 .system-logo img { width: auto; max-width: 100%; height: auto; object-fit: contain; object-position: center; }
+.system-logo--dw { background: radial-gradient(circle at 22% 50%, rgba(110, 240, 216, .11), transparent 36%), radial-gradient(circle at 78% 50%, rgba(248, 139, 139, .09), transparent 34%), #1b202d; }
 .system-logo--dw img { width: min(100%, 720px); }
-.system-logo--amber img { width: min(108%, 590px); }
-.system-logo--commerce { min-height: 270px; padding-block: 12px; }
+.system-logo--amber { background: radial-gradient(circle at 28% 50%, rgba(255, 177, 27, .13), transparent 38%), #211b1c; }
+.system-logo--amber img { width: min(100%, 590px); }
+.system-logo--commerce { min-height: 270px; padding-block: 12px; background: #090f18; }
 .system-logo--commerce img { width: 335px; max-height: 246px; }
-.system-logo--tacti { min-height: 270px; padding-block: 12px; }
+.system-logo--tacti { min-height: 270px; padding-block: 12px; background: #111a2d; }
 .system-logo--tacti img { width: 245px; max-height: 245px; }
 .tile-copy { margin-top: auto; }
 .tile-copy h3 { margin: 0; font-size: 31px; font-weight: 500; letter-spacing: -.04em; }

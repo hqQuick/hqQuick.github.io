@@ -28,9 +28,9 @@
       <path d="M156 28 260 83 279 190 210 282 96 282 28 190 48 83Z"/>
     </clipPath>
     <style>
-      .wordmark { fill: #d87513; stroke: #5f2907; stroke-width: 1; paint-order: stroke fill; }
-      .descriptor { fill: #b86113; }
-      .tagline { fill: #c36b12; }
+      .wordmark { fill: #ffb454; stroke: #5f2907; stroke-width: 1; paint-order: stroke fill; }
+      .descriptor { fill: #e0af68; }
+      .tagline { fill: #ff9e64; }
     </style>
   </defs>
 
