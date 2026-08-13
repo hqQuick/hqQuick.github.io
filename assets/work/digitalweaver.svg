@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="dw-title dw-desc">
+  <title id="dw-title">Digital Weaver — Real-Time Taste Engine for E-Commerce</title>
+  <desc id="dw-desc">Digital Weaver hero banner: interlocking weave mark with the wordmark Digital Weaver and the tagline Real-Time Taste Engine for E-Commerce.</desc>
+  <defs>
+    <linearGradient id="dwMark" gradientUnits="userSpaceOnUse" x1="4" y1="4" x2="28" y2="28">
+      <stop stop-color="#6EF0D8"/>
+      <stop offset="1" stop-color="#F88B8B"/>
+    </linearGradient>
+    <linearGradient id="dwVert" gradientUnits="userSpaceOnUse" x1="0" y1="88" x2="0" y2="172">
+      <stop stop-color="#6EF0D8"/>
+      <stop offset="1" stop-color="#F88B8B"/>
+    </linearGradient>
+    <style>
+      .dw-wm {
+        font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 64px;
+        letter-spacing: -1.5px;
+        fill: #1f2328;
+      }
+      .dw-tag {
+        font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        letter-spacing: 0.4px;
+        fill: #57606a;
+      }
+    </style>
+  </defs>
+
+  <!-- subtle background echo of the weave motif, mirrored on the right -->
+  <g transform="translate(986,34) scale(6)" opacity="0.07">
+    <path d="M4 4L12 12L4 20M28 12L20 20L28 28M20 4L12 12L20 20M12 28L4 20"
+          fill="none" stroke="url(#dwMark)" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- left-side brand mark: scaled weave motif -->
+  <g transform="translate(48,71) scale(3.6)">
+    <path d="M4 4L12 12L4 20M28 12L20 20L28 28M20 4L12 12L20 20M12 28L4 20"
+          fill="none" stroke="url(#dwMark)" stroke-width="2.2"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- gradient divider separating mark from wordmark -->
+  <rect x="186" y="88" width="3" height="84" rx="1.5" fill="url(#dwVert)" opacity="0.9"/>
+
+  <!-- wordmark and tagline -->
+  <text class="dw-wm" x="210" y="130">Digital Weaver</text>
+  <text class="dw-tag" x="212" y="169">Real-Time Taste Engine for E-Commerce</text>
+</svg>

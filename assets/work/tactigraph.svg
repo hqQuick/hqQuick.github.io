@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">TactiGraph logo</title>
+  <desc id="desc">A tactical network forming a T over a pitch, with a rising live-probability trace.</desc>
+  <defs>
+    <radialGradient id="background" cx="50%" cy="22%" r="90%">
+      <stop offset="0" stop-color="#1b3154"/>
+      <stop offset="1" stop-color="#081226"/>
+    </radialGradient>
+    <linearGradient id="trace" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset=".58" stop-color="#7dd3fc"/>
+      <stop offset="1" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="network" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <filter id="trace-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="node-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="96" fill="url(#background)"/>
+  <path d="M64 80h384v300H64z" fill="#0c1c34" fill-opacity=".34"/>
+
+  <g fill="none" stroke="#c7d8f5" stroke-linecap="round">
+    <path d="M64 80h384v300H64z" stroke-opacity=".72" stroke-width="6"/>
+    <path d="M256 80v300M64 230h384" stroke-opacity=".24" stroke-width="4"/>
+    <circle cx="256" cy="230" r="44" stroke-opacity=".25" stroke-width="4"/>
+    <path d="M64 150h58v160H64M448 150h-58v160h58" stroke-opacity=".24" stroke-width="4"/>
+    <path d="M88 104h336M88 356h336" stroke-opacity=".1" stroke-width="2" stroke-dasharray="3 13"/>
+  </g>
+
+  <g fill="none" stroke="url(#network)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M132 282 190 218 256 158 322 218 380 282" stroke-opacity=".92" stroke-width="7"/>
+    <path d="M132 282 256 158 380 282M190 218h132M190 218 256 282 322 218" stroke-opacity=".36" stroke-width="4" stroke-dasharray="6 12"/>
+  </g>
+
+  <path d="M106 332 166 312 222 325 278 286 330 250 404 148" fill="none" stroke="url(#trace)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" filter="url(#trace-glow)"/>
+  <path d="M106 332 166 312 222 325 278 286 330 250 404 148" fill="none" stroke="#ecfeff" stroke-opacity=".48" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g fill="#f8fafc" stroke="#5eead4" stroke-width="7" filter="url(#node-glow)">
+    <circle cx="132" cy="282" r="15"/>
+    <circle cx="190" cy="218" r="15"/>
+    <circle cx="256" cy="158" r="17"/>
+    <circle cx="322" cy="218" r="15"/>
+    <circle cx="380" cy="282" r="15"/>
+  </g>
+  <circle cx="404" cy="148" r="13" fill="#fbbf24" stroke="#fffbeb" stroke-width="6" filter="url(#node-glow)"/>
+
+  <g fill="#9feee2">
+    <circle cx="92" cy="120" r="3"/>
+    <circle cx="420" cy="112" r="3"/>
+    <circle cx="407" cy="344" r="3"/>
+  </g>
+  <path d="M102 408h308" stroke="#5eead4" stroke-opacity=".28" stroke-width="4" stroke-linecap="round"/>
+  <text x="256" y="451" fill="#f8fafc" font-family="system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="29" font-weight="700" letter-spacing="7" text-anchor="middle">TACTIGRAPH</text>
+</svg>
