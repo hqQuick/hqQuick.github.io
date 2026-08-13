@@ -16,7 +16,7 @@
   --red: #f7768e;
   color: var(--text);
   background: var(--bg);
-  font-family: "Segoe UI", Inter, ui-sans-serif, system-ui, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Inter, ui-sans-serif, system-ui, sans-serif;
   font-synthesis: none;
 }
 
@@ -43,7 +43,7 @@ img { display: block; max-width: 100%; }
   backdrop-filter: blur(16px);
 }
 .brand { width: max-content; display: flex; align-items: center; gap: 13px; }
-.brand-mark { width: 44px; height: 44px; display: grid; place-items: center; background: var(--blue); color: var(--bg-deep); font: 800 13px/1 "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
+.brand-mark { width: 44px; height: 44px; display: grid; place-items: center; background: var(--blue); color: var(--bg-deep); font: 800 13px/1 "SFMono-Regular", Menlo, Monaco, "Liberation Mono", monospace; }
 .brand-copy { display: grid; gap: 3px; }
 .brand-copy strong { color: var(--bright); font-size: 14px; }
 .brand-copy small { color: var(--muted); font-size: 11px; }
@@ -54,7 +54,7 @@ nav a:hover, .header-link:hover { color: var(--cyan); }
 .header-link span { color: var(--cyan); }
 
 .hero { min-height: 690px; padding-block: clamp(80px, 10vw, 136px); display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(400px, .92fr); gap: clamp(48px, 8vw, 100px); align-items: center; }
-.kicker { margin: 0 0 20px; color: var(--cyan); font: 700 11px/1.4 "Cascadia Code", "SFMono-Regular", Consolas, monospace; letter-spacing: .11em; text-transform: uppercase; }
+.kicker { margin: 0 0 20px; color: var(--cyan); font: 700 11px/1.4 "SFMono-Regular", Menlo, Monaco, "Liberation Mono", monospace; letter-spacing: .11em; text-transform: uppercase; }
 .kicker span { display: inline-block; width: 28px; height: 2px; margin: 0 10px 3px 0; background: var(--cyan); }
 .hero h1 { margin: 0; max-width: 760px; color: var(--bright); font-size: clamp(58px, 7.2vw, 92px); font-weight: 300; line-height: .94; letter-spacing: -.065em; }
 .hero h1 em { color: var(--blue); font-style: normal; font-weight: 650; }
@@ -67,12 +67,16 @@ nav a:hover, .header-link:hover { color: var(--cyan); }
 .button--quiet:hover { border-color: var(--purple); color: var(--purple); }
 
 .terminal { border: 1px solid var(--line); background: #101116; box-shadow: 18px 18px 0 rgba(122, 162, 247, .08); }
-.terminal-bar { min-height: 42px; padding: 0 12px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 10px; background: var(--panel); color: var(--muted); font-size: 12px; }
-.terminal-icon { width: 24px; height: 24px; display: grid; place-items: center; background: var(--blue); color: var(--bg-deep); font: 800 9px "Cascadia Code", Consolas, monospace; }
-.terminal-controls { color: #69739c; letter-spacing: .6em; }
-.terminal-body { min-height: 300px; padding: 25px 24px; color: var(--text); font: 13px/1.85 "Cascadia Code", "SFMono-Regular", Consolas, monospace; }
+.terminal-bar { min-height: 44px; padding: 0 14px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 10px; background: var(--panel); color: var(--muted); font-size: 11px; }
+.terminal-controls { display: flex; gap: 7px; }
+.terminal-controls i { width: 11px; height: 11px; display: block; border-radius: 50%; background: var(--red); }
+.terminal-controls i:nth-child(2) { background: var(--yellow); }
+.terminal-controls i:nth-child(3) { background: var(--green); }
+.terminal-shell { justify-self: end; color: #69739c; font-size: 15px; }
+.terminal-body { min-height: 300px; padding: 25px 24px; color: var(--text); font: 13px/1.85 "SFMono-Regular", Menlo, Monaco, "Liberation Mono", monospace; }
 .terminal-body p { margin: 0; }
 .prompt { color: var(--cyan); }
+.path { color: var(--blue); }
 .dim { color: var(--purple); }
 .terminal-status { display: flex; justify-content: space-between; gap: 16px; }
 .terminal-status > span:first-child { min-width: 0; }
@@ -85,7 +89,7 @@ nav a:hover, .header-link:hover { color: var(--cyan); }
 .signal-strip { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); border-bottom: 0; }
 .signal-strip li { min-height: 125px; padding: 24px; display: grid; align-content: center; gap: 8px; border-right: 1px solid var(--line); background: var(--panel); }
 .signal-strip li:last-child { border-right: 0; }
-.signal-strip strong { color: var(--bright); font: 500 32px/1 "Cascadia Code", Consolas, monospace; }
+.signal-strip strong { color: var(--bright); font: 500 32px/1 "SFMono-Regular", Menlo, Monaco, "Liberation Mono", monospace; }
 .signal-strip span { color: var(--muted); font-size: 12px; line-height: 1.4; }
 
 .systems { padding-block: 110px; background: var(--bg-deep); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -93,32 +97,39 @@ nav a:hover, .header-link:hover { color: var(--cyan); }
 .section-head h2 { margin: 0; max-width: 780px; color: var(--bright); font-size: clamp(42px, 5vw, 68px); font-weight: 300; line-height: .98; letter-spacing: -.055em; }
 .section-head > p { max-width: 520px; margin: 0; color: var(--muted); font-size: 14px; line-height: 1.65; }
 .metro-grid { display: grid; grid-template-columns: repeat(12, 1fr); grid-auto-flow: dense; gap: 12px; }
-.system-tile { min-height: 440px; padding: 25px; display: flex; flex-direction: column; overflow: hidden; color: var(--bright); }
+.system-tile { min-height: 510px; padding: 25px; display: flex; flex-direction: column; overflow: hidden; color: var(--bright); }
 .system-tile--dw { grid-column: span 7; background: var(--panel); border-top: 4px solid var(--cyan); }
 .system-tile--amber { grid-column: span 5; background: var(--panel-soft); border-top: 4px solid var(--orange); }
 .system-tile--commerce { grid-column: span 5; background: var(--panel); border-top: 4px solid var(--green); }
 .system-tile--tacti { grid-column: span 7; background: var(--panel-soft); border-top: 4px solid var(--purple); }
-.tile-label { display: flex; justify-content: space-between; color: rgba(232,234,246,.72); font: 10px "Cascadia Code", Consolas, monospace; letter-spacing: .1em; text-transform: uppercase; }
+.tile-label { display: flex; justify-content: space-between; color: rgba(232,234,246,.72); font: 10px "SFMono-Regular", Menlo, Monaco, "Liberation Mono", monospace; letter-spacing: .1em; text-transform: uppercase; }
 .tile-label b { font-weight: 500; }
-.system-tile > img { width: auto; max-width: 210px; max-height: 90px; margin: 37px 0 30px; object-fit: contain; object-position: left center; }
-.system-tile--commerce > img { max-width: 135px; max-height: 100px; }
-.system-tile--tacti > img { max-width: 82px; max-height: 82px; }
+.system-logo { min-height: 215px; margin: 24px -25px 28px; padding: 22px 25px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.system-logo--light { background: #f4f5f8; }
+.system-logo--dark { background: #10131c; }
+.system-logo img { width: auto; max-width: 100%; height: auto; object-fit: contain; object-position: center; }
+.system-logo--dw img { width: min(100%, 720px); }
+.system-logo--amber img { width: min(108%, 590px); }
+.system-logo--commerce { min-height: 270px; padding-block: 12px; }
+.system-logo--commerce img { width: 335px; max-height: 246px; }
+.system-logo--tacti { min-height: 270px; padding-block: 12px; }
+.system-logo--tacti img { width: 245px; max-height: 245px; }
 .tile-copy { margin-top: auto; }
 .tile-copy h3 { margin: 0; font-size: 31px; font-weight: 500; letter-spacing: -.04em; }
 .tile-copy p { max-width: 650px; margin: 15px 0 0; color: rgba(232,234,246,.76); font-size: 14px; line-height: 1.58; }
 .tile-copy ul { list-style: none; display: flex; flex-wrap: wrap; gap: 7px; padding: 0; margin: 22px 0 0; }
-.tile-copy li { padding: 5px 8px; border: 1px solid rgba(232,234,246,.4); font: 9px "Cascadia Code", Consolas, monospace; letter-spacing: .04em; text-transform: uppercase; }
+.tile-copy li { padding: 5px 8px; border: 1px solid rgba(232,234,246,.4); font: 9px "SFMono-Regular", Menlo, Monaco, "Liberation Mono", monospace; letter-spacing: .04em; text-transform: uppercase; }
 
 .engineering { padding-block: 110px; }
 .engineering-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 12px; }
 .engineering-tile { grid-column: span 5; min-height: 260px; padding: 28px; position: relative; background: var(--panel); border-top: 4px solid var(--purple); }
 .engineering-tile--large { grid-column: span 7; border-color: var(--blue); }
 .engineering-tile--accent { grid-column: span 7; background: var(--blue); color: var(--bg-deep); border-color: var(--cyan); }
-.tile-number { position: absolute; right: 23px; top: 20px; color: var(--muted); font: 12px "Cascadia Code", Consolas, monospace; }
+.tile-number { position: absolute; right: 23px; top: 20px; color: var(--muted); font: 12px "SFMono-Regular", Menlo, Monaco, "Liberation Mono", monospace; }
 .engineering-tile--accent .tile-number { color: rgba(22,22,30,.62); }
 .engineering-tile h3 { margin: 55px 0 14px; color: var(--bright); font-size: 28px; font-weight: 500; letter-spacing: -.035em; }
 .engineering-tile--accent h3 { color: var(--bg-deep); }
-.engineering-tile p { margin: 0; color: var(--cyan); font: 13px/1.65 "Cascadia Code", Consolas, monospace; }
+.engineering-tile p { margin: 0; color: var(--cyan); font: 13px/1.65 "SFMono-Regular", Menlo, Monaco, "Liberation Mono", monospace; }
 .engineering-tile--accent p { color: var(--bg-deep); }
 .engineering-tile small { display: block; max-width: 590px; margin-top: 22px; color: var(--muted); font-size: 13px; line-height: 1.5; }
 
@@ -128,7 +139,7 @@ nav a:hover, .header-link:hover { color: var(--cyan); }
 .contact-tile { grid-column: span 4; min-height: 150px; padding: 23px; display: grid; grid-template-columns: 1fr auto; align-content: space-between; background: var(--panel); border-left: 4px solid var(--purple); }
 .contact-tile--email { grid-column: span 8; background: var(--blue); color: var(--bg-deep); border-color: var(--cyan); }
 .contact-tile--credly { background: #3a3154; border-color: var(--purple); }
-.contact-tile span { grid-column: 1; color: var(--muted); font: 10px "Cascadia Code", Consolas, monospace; text-transform: uppercase; letter-spacing: .1em; }
+.contact-tile span { grid-column: 1; color: var(--muted); font: 10px "SFMono-Regular", Menlo, Monaco, "Liberation Mono", monospace; text-transform: uppercase; letter-spacing: .1em; }
 .contact-tile--email span { color: var(--bg-deep); }
 .contact-tile strong { grid-column: 1; align-self: end; color: var(--bright); font-size: 16px; overflow-wrap: anywhere; }
 .contact-tile--email strong { color: var(--bg-deep); font-size: clamp(18px, 2.4vw, 27px); }
@@ -147,7 +158,11 @@ nav a:hover, .header-link:hover { color: var(--cyan); }
   .signal-strip li:nth-child(2) { border-right: 0; }
   .signal-strip li:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
   .section-head { grid-template-columns: 1fr; gap: 24px; }
-  .system-tile, .system-tile--dw, .system-tile--amber, .system-tile--commerce, .system-tile--tacti { grid-column: span 12; min-height: 410px; }
+  .system-tile, .system-tile--dw, .system-tile--amber, .system-tile--commerce, .system-tile--tacti { grid-column: span 12; min-height: 490px; }
+  .system-logo--dw img { width: min(88vw, 760px); }
+  .system-logo--amber img { width: min(84vw, 650px); }
+  .system-logo--commerce img { width: 340px; max-height: 250px; }
+  .system-logo--tacti img { width: 250px; max-height: 250px; }
   .engineering-tile, .engineering-tile--large, .engineering-tile--accent { grid-column: span 12; }
   .contact-tile, .contact-tile--email { grid-column: span 6; }
 }
@@ -164,8 +179,13 @@ nav a:hover, .header-link:hover { color: var(--cyan); }
   .signal-strip { width: 100%; grid-template-columns: 1fr; border-inline: 0; }
   .signal-strip li, .signal-strip li:nth-child(2) { min-height: 105px; border-right: 0; border-bottom: 1px solid var(--line); }
   .systems, .engineering, .contact { padding-block: 78px; }
-  .system-tile { min-height: 430px; padding: 22px; }
-  .system-tile > img { max-width: 170px; max-height: 75px; }
+  .system-tile { min-height: 470px; padding: 22px; }
+  .system-logo { min-height: 180px; margin: 22px -22px 24px; padding: 18px 22px; }
+  .system-logo--dw img { width: 100%; }
+  .system-logo--amber img { width: 105%; }
+  .system-logo--commerce, .system-logo--tacti { min-height: 235px; }
+  .system-logo--commerce img { width: 285px; max-height: 215px; }
+  .system-logo--tacti img { width: 215px; max-height: 215px; }
   .engineering-tile { min-height: 245px; }
   .contact-tile, .contact-tile--email { grid-column: span 12; }
   .site-footer { padding-block: 24px; flex-direction: column; align-items: flex-start; }

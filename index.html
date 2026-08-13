@@ -43,20 +43,20 @@
           </div>
         </div>
 
-        <aside class="terminal" aria-label="Engineering workflow shown as a PowerShell session">
+        <aside class="terminal" aria-label="Engineering workflow shown as a zsh terminal session">
           <div class="terminal-bar">
-            <span class="terminal-icon">PS</span>
-            <span>Windows PowerShell</span>
-            <span class="terminal-controls" aria-hidden="true">— □ ×</span>
+            <span class="terminal-controls" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span>wojtek — zsh — ~/systems</span>
+            <span class="terminal-shell" aria-hidden="true">⌘</span>
           </div>
           <div class="terminal-body">
-            <p><span class="prompt">PS C:\systems&gt;</span> .\build-proof.ps1</p>
+            <p><span class="prompt">wojtek@workstation</span> <span class="path">~/systems</span> % ./build-proof</p>
             <p class="terminal-status"><span><span class="dim">[01]</span> define the operating contract</span><span class="ok">OK</span></p>
             <p class="terminal-status"><span><span class="dim">[02]</span> cross every layer once</span><span class="ok">OK</span></p>
             <p class="terminal-status"><span><span class="dim">[03]</span> exercise the failure path</span><span class="ok">OK</span></p>
             <p class="terminal-status"><span><span class="dim">[04]</span> preserve the evidence</span><span class="ok">OK</span></p>
             <p class="terminal-result">result: useful, observable, ready to operate</p>
-            <p><span class="prompt">PS C:\systems&gt;</span><span class="cursor" aria-hidden="true"></span></p>
+            <p><span class="prompt">wojtek@workstation</span> <span class="path">~/systems</span> %<span class="cursor" aria-hidden="true"></span></p>
           </div>
         </aside>
       </section>
@@ -84,9 +84,11 @@
           <div class="metro-grid">
             <article class="system-tile system-tile--dw">
               <div class="tile-label"><span>Commerce intelligence</span><b>01</b></div>
-              <img src="assets/work/digitalweaver.svg" width="1200" height="260" alt="DigitalWeaver">
+              <div class="system-logo system-logo--light system-logo--dw">
+                <img src="assets/work/digitalweaver.svg" width="700" height="180" alt="">
+              </div>
               <div class="tile-copy">
-                <h3>DigitalWeaver</h3>
+                <h3 class="visually-hidden">DigitalWeaver</h3>
                 <p>Semantic and visual retrieval, per-session taste, Stripe billing, quotas, WooCommerce, and an authorised operational interface. The current full proof is a 31/31 local Docker gate.</p>
                 <ul><li>retrieval</li><li>multi-tenant</li><li>commerce</li></ul>
               </div>
@@ -94,9 +96,11 @@
 
             <article class="system-tile system-tile--amber">
               <div class="tile-label"><span>Retrieval core</span><b>02</b></div>
-              <img src="assets/work/amber.svg" width="1200" height="320" alt="AMBER">
+              <div class="system-logo system-logo--light system-logo--amber">
+                <img src="assets/work/amber.svg" width="1200" height="320" alt="">
+              </div>
               <div class="tile-copy">
-                <h3>AMBER</h3>
+                <h3 class="visually-hidden">AMBER</h3>
                 <p>A Go ranker compressing a 384-dimensional document embedding into a 48-byte code, with online append and atomic snapshots.</p>
                 <ul><li>Go</li><li>48 bytes</li><li>direct ranking</li></ul>
               </div>
@@ -104,9 +108,11 @@
 
             <article class="system-tile system-tile--commerce">
               <div class="tile-label"><span>Commerce platform</span><b>03</b></div>
-              <img src="assets/work/commerceos.svg" width="720" height="540" alt="CommerceOS">
+              <div class="system-logo system-logo--dark system-logo--commerce">
+                <img src="assets/work/commerceos.svg" width="720" height="540" alt="">
+              </div>
               <div class="tile-copy">
-                <h3>CommerceOS</h3>
+                <h3 class="visually-hidden">CommerceOS</h3>
                 <p>Server-owned pricing and inventory, immutable records, deny-by-default access, and payment truth reconciled against the provider.</p>
                 <ul><li>Go</li><li>Google Cloud</li><li>deterministic</li></ul>
               </div>
@@ -114,9 +120,11 @@
 
             <article class="system-tile system-tile--tacti">
               <div class="tile-label"><span>Applied research</span><b>04</b></div>
-              <img src="assets/work/tactigraph.svg" width="512" height="512" alt="TactiGraph">
+              <div class="system-logo system-logo--dark system-logo--tacti">
+                <img src="assets/work/tactigraph.svg" width="512" height="512" alt="">
+              </div>
               <div class="tile-copy">
-                <h3>TactiGraph</h3>
+                <h3 class="visually-hidden">TactiGraph</h3>
                 <p>Four-sport tactical intelligence separating observation, deterministic rules, inference, degraded inputs, and reconciliation.</p>
                 <ul><li>Python</li><li>calibration</li><li>evidence</li></ul>
               </div>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="dw-title dw-desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 25 700 180" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="dw-title dw-desc">
   <title id="dw-title">Digital Weaver — Real-Time Taste Engine for E-Commerce</title>
   <desc id="dw-desc">Digital Weaver hero banner: interlocking weave mark with the wordmark Digital Weaver and the tagline Real-Time Taste Engine for E-Commerce.</desc>
   <defs>
@@ -12,14 +12,14 @@
     </linearGradient>
     <style>
       .dw-wm {
-        font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-weight: 700;
         font-size: 64px;
         letter-spacing: -1.5px;
         fill: #1f2328;
       }
       .dw-tag {
-        font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-weight: 500;
         font-size: 22px;
         letter-spacing: 0.4px;
